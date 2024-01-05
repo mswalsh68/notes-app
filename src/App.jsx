@@ -6,7 +6,7 @@ import { nanoid } from "nanoid"
 import './Styles.css'
 
 export default function App() {
-
+ 
   const [notes, setNotes] = React.useState(() => {
     const storedNotes = JSON.parse(localStorage.getItem("notes"));
     return Array.isArray(storedNotes) ? storedNotes : [];
